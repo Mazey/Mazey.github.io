@@ -126,7 +126,13 @@ const sideTypes = [
 	"power",
 	"stuck",
 	"money",
-	"cracked"
+	"star",
+	"skip",
+	"mirror",
+	"cracked",
+	"empty",
+	"hardy",
+	"doom"
 ];
 
 window.addEventListener("DOMContentLoaded", () => {
