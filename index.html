@@ -1,7 +1,27 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+<label>
+  Difficulty:
+  <select id="difficulty">
+    <option value="easy">Easy</option>
+    <option value="hard">Hard</option>
+  </select>
+</label>
+
+<button onclick="downloadJson()">Download JSON</button>
+
+<script>
+function downloadJson() {
+  const data = {
+    difficulty: document.getElementById("difficulty").value
+  };
+
+  const blob = new Blob(
+    [JSON.stringify(data, null, 2)],
+    { type: "application/json" }
+  );
+
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "settings.json";
+  a.click();
+}
+</script>
