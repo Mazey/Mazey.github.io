@@ -434,7 +434,8 @@ lua += `
 \tdialogue_text = {
 \t\tsetup = {
 \t\t\tline1 = "${escapeLuaString(dialogues.setup.line1)}",
-\t\t\tline2 = "${escapeLuaString(dialogues.setup.line2)}"
+\t\t\tline2_easy = "${escapeLuaString(dialogues.setup.line2_easy)}",
+\t\t\tline2_normal = "${escapeLuaString(dialogues.setup.line2_normal)}"
 \t\t},
 \t\tgameover = {
 \t\t\tline1 = "${escapeLuaString(dialogues.gameover.line1)}",
